@@ -1,0 +1,181 @@
+body {
+  background-color: #000;
+  font-family: "Roboto", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+p {
+  font-size: 17px;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
+table {
+  width: 425px;
+  height: auto;
+  background-color: rgb(194, 194, 194);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+img {
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px 0 #000;
+  transition: transform .2s;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+#home-card {
+  background-color: #fff;
+  width: 450px;
+  height: 475px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  animation: fadeIn;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#card {
+  background-color: #fff;
+  width: 450px;
+  height: 475px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  animation: fadeIn;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#pic-table {
+  width: 425px;
+  height: auto;
+  margin: auto;
+}
+
+#navbar {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  top: 80%;
+}
+
+#icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.fas, .fab {
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* -space divs- */
+
+hr {
+  border-top: 3px solid #000;
+  border-radius: 5px;
+}
+
+.double-space {
+  margin-top: 200px;
+}
+
+.space {
+  margin-top: 100px;
+}
+
+.half-space {
+  margin-top: 50px;
+}
+
+.quarter-space {
+  margin-top: 25px;
+}
+
+/* -css animations- */
+
+.fas:hover, .fab:hover {
+  font-size: 33px;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(2); 
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
